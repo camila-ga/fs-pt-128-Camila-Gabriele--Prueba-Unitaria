@@ -27,16 +27,9 @@ const fromDollarToYen = function(dollar){
     let valueInYen = dollar * 146.26;
     return valueInYen;
 }
-// 1€ --------- 1.07 USD
-// 1€ --------- 156.5 YEN
-// entonces puedo hacer 156.5 / 1.07 : 146.26 YEN = 1USD
 
-    
 const fromYenToPound = function(yen){
     let valueInPound = yen * 0.00556;
     return valueInPound;
 }
-//1€ ------- 0.87 POUND
-//1€ ------- 156.5 YEN 
-// entonces puedo hacer 0.87 / 156.5 : 0.00556 POUND = 1YEN
 module.exports = { sum,fromEuroToDollar, fromDollarToYen, fromYenToPound };

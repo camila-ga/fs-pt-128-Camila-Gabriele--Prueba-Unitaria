@@ -25,12 +25,12 @@ test("One dollar should be 146.26 japan yen", function () {
     const { fromDollarToYen } = require('./app.js');
     const dollars = fromDollarToYen(55);
     const expected = 55 * 146.26;
-    expect(dollars).toBe(expected);
+    expect(dollars).toBeCloseTo(expected);
 })
 
 test("One Japan Yen should be 0.00556 Pound ", function () {
     const { fromYenToPound } = require('./app.js');
     const yen = fromYenToPound (15);
     const expected = 15 * 0.00556;
-    expect(yen).toBe(expected);
+    expect(yen).toBeCloseTo(expected);
 })

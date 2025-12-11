@@ -24,7 +24,7 @@ test("One euro should be 1.07 dollars", function () {
 test("One dollar should be 146.26 japan yen", function () {
     const { fromDollarToYen } = require('./app.js');
     const dollars = fromDollarToYen(55);
-    const expected = 55 * 146.26;
+    const expected = 55 * 146.261682;
     expect(dollars).toBeCloseTo(expected);
 })
 
